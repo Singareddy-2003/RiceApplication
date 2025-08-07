@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Escape",
+  "steps": [
+    {
+      "file": "src/pages/auth/Login.jsx",
+      "description": "this is a usestate for holding the values\r\n",
+      "line": 10
+    }
+  ]
+}

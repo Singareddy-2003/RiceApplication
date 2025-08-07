@@ -1,0 +1,359 @@
+.navbar{
+    background-color: #013220;
+}
+.carticon{
+    font-size: 30px;
+    color: white;
+}
+
+
+.footer-icons{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+}
+ul{
+    list-style-type: none;
+}
+.footerbg {
+
+    background-color: #013220;
+
+
+}
+
+.footerbg i {
+  font-size: 1.2rem;
+  color: #ffc107;
+  transition: 0.3s;
+}
+
+.footerbg i:hover {
+  color: white;
+}
+
+/* .navbar-toggler-icon {
+    background-color: white !important;
+    color: white !important;
+    border: white !important;
+} */
+
+
+.hero1{
+  background-image: url('./src/assets/hero1.jpeg');
+  background-size: cover;
+  height: 90vh;
+
+
+}
+
+.hero-heading{
+  position: absolute;
+  top: 200px;
+  text-align: center;
+}
+
+.prifileimage{
+display: block;
+
+}
+
+.logoutdiv{
+  /* margin-top: 0px !important; */
+  position: sticky;
+  height: 100vh;
+  background-color: #ffc107;
+}
+
+.grid{
+  background-image: url('/src/assets/bg.png');
+  background-size: cover;
+  height: 40vh;
+}
+
+
+
+ 
+.abpara{
+    position: relative;
+    top: 100px;
+}
+
+
+@media (max-width: 576px) {
+  .logoutdiv {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    text-align: left;
+    height: 50vh;
+  }
+
+  .logoutdiv img {
+    width: 80px !important;
+    height: 80px !important;
+    margin: 0;
+  }
+
+  .logoutdiv h5 {
+    margin-left: 1rem;
+    margin-right: auto;
+    font-size: 16px;
+  }
+
+  .logoutdiv button {
+    margin-left: auto;
+    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+    width: auto;
+  }
+
+  .col-md-9 {
+    padding: 1rem;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+
+  .form-control,
+  textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 999px){
+    .logoutdiv {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    text-align: left;
+    height: 60vh;
+  }
+}
+
+
+/* about us hero grid  */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.contact-bg{
+ background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.blog-img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+    }
+
+.blog-card {
+transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+transform: scale(1.03);
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+
+.hero-swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-slide .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  backdrop-filter: blur(3px);
+}
+
+
+.offer-swiper {
+  background: linear-gradient(90deg, #fdfdfd, #f8f9fa);
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+
+/* styles.css or inside your component CSS file */
+
+.hero-swiper-container {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.hero-slide {
+  min-height: 100vh;
+  background-color: #f7f7f7; /* Optional clean background */
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-slide {
+    padding: 2rem 1rem !important;
+    min-height: auto;
+  }
+
+  .hero-slide h1 {
+    font-size: 2rem;
+  }
+
+  .hero-slide p {
+    font-size: 1rem;
+  }
+
+  .hero-slide img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .hero-slide .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-slide button {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.sidebarbackground {
+  background-color: #013220;
+  /* width: 280px; */
+}
+
+.sidebar:hover{
+  transition: linear;
+  color: #ffc107 !important;
+}
+.sidebarbackground{
+  position:fixed;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.cardbg{
+  background-color: #013220 !important;
+}
+
+/* admin.css */
+
+/* Make sidebar full height on desktop */
+.sidebar-container {
+  min-height: calc(100vh - 70px);
+}
+
+/* Scrollbar style */
+.content-area::-webkit-scrollbar {
+  width: 6px;
+}
+.content-area::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .sidebar-container {
+    display: none; 
+  }
+}
+
+/* ===== Default Sidebar Style ===== */
+.sidebar-container {
+  height: calc(100vh - 60px); /* adjust for navbar height */
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ===== Mobile View ===== */
+@media (max-width: 768px) {
+  .sidebar-container {
+    position: fixed;
+    top: 60px; /* navbar height */
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 60px);
+    background: #fff;
+    border-right: 1px solid #ddd;
+    transform: translateX(-100%); /* hide by default */
+    z-index: 1050;
+  }
+
+  /* When active (show sidebar) */
+  .sidebar-container.active {
+    transform: translateX(0);
+  }
+
+  /* Make main content full width */
+  .content-area {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  /* Optional overlay background when sidebar is open */
+  .sidebar-overlay {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1049;
+  }
+}

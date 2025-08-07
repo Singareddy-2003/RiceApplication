@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "user_id_3",
+      "name": "sreenu",
+      "email": "sreenu@gmail.com",
+      "password": "sreenu@123",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "85bb",
+      "email": "ramu@gmail.com",
+      "password": "1234",
+      "Full Name": "ramu",
+      "role": "public",
+      "isActive": true
+    },
+    {
+      "id": "6f2d",
+      "email": "mahanthsingareddy3@gmail.com",
+      "password": "12345",
+      "Full Name": "Mahanth",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "89f1",
+      "email": "ganesh@gmail.com",
+      "password": "1234",
+      "Full Name": "GANESH",
+      "role": "public",
+      "isActive": true
+    }
+  ]
+}

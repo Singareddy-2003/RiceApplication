@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+      font-family: "Noto Serif", serif;
+
+}
+:root{
+    /* background: #1085b0; */
+--background: linear-gradient(90deg, rgba(16, 133, 176, 1) 0%, rgba(0, 158, 66, 1) 53%, rgba(198, 215, 96, 1) 100%, rgba(203, 216, 94, 1) 100%, rgba(237, 221, 83, 1) 99%);
+}
+/* login styles  */
+
+.login-bg{
+
+    background-color:#ffffff;
+   
+    background-image: 
+    linear-gradient(0deg, rgba(189, 228, 171, 0.543) 1px, transparent 2px),
+    linear-gradient(90deg, rgba(222, 222, 167, 0.543) 1px, transparent 2px);
+    background-size: 50px 50px;
+    min-height: 100vh;
+    animation:login-bg 10s linear 0s infinite alternate forwards ;
+
+}
+
+
+@keyframes login-bg {
+    from {
+        background-position: 0px;
+    }
+    to{
+        background-position: 50px;
+    }
+}
+
+ 
+    
+    
+.gridabout {
+  background-image: 
+    linear-gradient(0deg, rgba(192, 247, 42, 0.3) 1px, transparent 2px),
+    linear-gradient(90deg, rgba(11, 211, 91, 0.3) 1px, transparent 2px);
+  background-size: 50px 50px;
+  min-height: 40vh;
+  animation: gridabout 10s linear infinite alternate forwards;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+/* Bright white diagonal shine effect */
+.gridabout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 100%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  transform: skewX(-20deg);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+/* Activate shine on hover */
+.gridabout:hover::before {
+  animation: shine 1.2s ease-in-out forwards;
+  opacity: 1;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
+}
+
+@keyframes gridabout {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px;
+  }
+}
+
